@@ -8,6 +8,9 @@ if len(sys.argv) > 2:
   ignore_hidden = True
   ignore_pattern = sys.argv[2]
 
+if len(sys.argv) == 1:
+    print "Usage: %s <directory> <exclude regexp>" % (sys.argv[0])
+    sys.exit()
 
 file_list = list()
 file_ignored = list()
